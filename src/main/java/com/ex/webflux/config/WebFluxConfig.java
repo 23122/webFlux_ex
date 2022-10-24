@@ -16,7 +16,7 @@ import static org.springframework.web.reactive.function.server.RequestPredicates
 public class WebFluxConfig {
 
     @Bean
-    RouterFunction route() {
+    public RouterFunction route() {
 
         BoardHandler boardHandler= new BoardHandler();
 
