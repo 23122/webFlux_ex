@@ -10,7 +10,7 @@ public class WebfluxController {
 
     @GetMapping("/hello")
     public String hello() {
-        return "Hello WenFlux!!!";
+        return "Hello WebFlux!!!";
     }
 
     @GetMapping("/hello/mono")
@@ -21,7 +21,7 @@ public class WebfluxController {
     @GetMapping("/hello/flux")
     public Flux helloFlux() {
         return Flux.just(
-                "Hello WenFlux!!!",
+                "Hello WebFlux!!!",
                 "Hello Reactor 3!!!",
                 "Hello Reactive Streams!!!");
     }
